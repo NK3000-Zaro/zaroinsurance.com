@@ -1,1 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZARO Insurance — Compare & Save (Fully Automated)</title>
+<meta name="description" content="ZARO compares car insurance automatically. Instant quote requests, partner comparison, status tracking, reminders, and privacy controls — no phone calls.">
+<style>
+  :root{--bg:#0b0b0b;--fg:#fff;--muted:#9aa0a6;--card:#111;--accent:#2f80ff;--ok:#12b886;--warn:#ffc107}
+  *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#000;color:var(--fg)}
+  a{color:#fff;text-decoration:none}
+  header{background:#0b0b0b;border-bottom:1px solid #1d1d1d}
+  .wrap{max-width:1080px;margin:0 auto;padding:20px}
+  .brand{display:flex;align-items:center;justify-content:space-between}
+  .brand h1{margin:0;font-size:22px}
+  .hero{padding:26px 0;text-align:center}
+  .hero h2{font-size:28px;margin:0}
+  .sub{color:var(--muted);margin-top:6px}
+  .cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+  .btn{display:inline-block;padding:12px 14px;border-radius:12px;border:1px solid #222;background:#111}
+  .btn--primary{background:var(--accent);border-color:var(--accent)}
+  .btn--ok{background:var(--ok);border-color:var(--ok)}
+  .grid{display:grid;gap:12px;padding:0 16px 36px}
+  @media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--card);border:1px solid #1d1d1d;border-radius:14px;padding:16px}
+  .card h3{margin:0 0 6px;font-size:18px}
+  .list{margin:10px 0 0 18px}
+  .pill{display:inline-block;padding:6px 10px;border:1px solid #222;border-radius:999px;font-size:13px;color:var(--muted);margin:4px}
+  footer{border-top:1px solid #1d1d1d;color:var(--muted);text-align:center;padding:18px 16px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap brand">
+    <h1>ZARO Insurance</h1>
+    <nav aria-label="Top">
+      <a class="pill" href="#how">How it works</a>
+      <a class="pill" href="#compare">Compare</a>
+      <a class="pill" href="status.html">Track</a>
+      <a class="pill" href="privacy-center.html">Privacy</a>
+    </nav>
+  </div>
+</header>
 
+<section class="wrap hero">
+  <h2>Compare car insurance. No calls. No hassle.</h2>
+  <p class="sub">Automated quote requests + partner comparison. Track everything online.</p>
+  <div class="cta">
+    <a class="btn btn--primary" href="quote.html">Start Online Quote</a>
+    <a class="btn" href="status.html">Track Quote / Retrieve ID</a>
+    <a class="btn btn--ok" href="reminders.html">Set Renewal Reminders</a>
+  </div>
+  <p class="sub" style="margin-top:10px">Average time to submit a quote request: ~2 minutes.</p>
+</section>
+
+<main class="grid">
+  <div class="card" id="how">
+    <h3>How ZARO works</h3>
+    <ol class="list">
+      <li>Tell us about you & the vehicle (VRN autofill coming soon).</li>
+      <li>Get a <b>Quote ID</b> via email and <b>track status</b> anytime.</li>
+      <li>Compare partner prices or wait for your results. No phone calls.</li>
+    </ol>
+    <p class="sub">You control your data — download or delete it in the Privacy Center.</p>
+  </div>
+
+  <div class="card" id="compare">
+    <h3>Big-brand comparison (optional)</h3>
+    <p>Prefer to click through yourself? Use our partner shortcuts:</p>
+    <p>
+      <a class="btn" href="#">Partner A</a>
+      <a class="btn" href="#">Partner B</a>
+      <a class="btn" href="#">Partner C</a>
+    </p>
+    <p class="sub">We may earn a small commission if you proceed with a partner.</p>
+  </div>
+
+  <div class="card">
+    <h3>Why choose ZARO</h3>
+    <ul class="list">
+      <li>No sales calls or WhatsApp — 100% self-serve</li>
+      <li>Fast submission + quote tracking</li>
+      <li>Smart reminders: renewal, MOT, tax</li>
+      <li>Road-height & width alerts (coming)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Priority processing (£2.99)</h3>
+    <p>Optional upgrade to jump your request to the front of the queue (fully automated).</p>
+    <p><a class="btn" href="priority.html">Upgrade</a></p>
+  </div>
+
+  <div class="card">
+    <h3>Upload docs securely</h3>
+    <p>Driving licence, NCD proof, or photos — processed automatically.</p>
+    <p><a class="btn" href="upload.html">Upload</a></p>
+  </div>
+
+  <div class="card">
+    <h3>Privacy & control</h3>
+    <p>Download or delete your data any time, without contacting anyone.</p>
+    <p><a class="btn" href="privacy-center.html">Open Privacy Center</a></p>
+  </div>
+</main>
+
+<footer>
+  © <span id="y"></span> ZARO Insurance • <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
